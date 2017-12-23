@@ -22,6 +22,9 @@ public class UfoCatcherRedis implements Serializable{
     //最后一次操作时间
     private long lastUpdateTmDt;
 
+    //最后一次游戏开始时间
+    private long lastGameStartDtTm;
+
     //最后一局游戏结束时间
     private long lastGameEndDtTm;
 
@@ -83,5 +86,13 @@ public class UfoCatcherRedis implements Serializable{
 
     public void setUserIntro(UserIntro userIntro) {
         this.userIntro = userIntro;
+    }
+
+    public long getLastGameStartDtTm() {
+        return lastGameStartDtTm;
+    }
+
+    public void setLastGameStartDtTm(long lastGameStartDtTm) {
+        this.lastGameStartDtTm = lastGameStartDtTm;
     }
 }
